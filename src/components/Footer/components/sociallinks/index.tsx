@@ -20,7 +20,7 @@ const Links = [
     {
         img: './assets/icon-facebook.svg',
         name: 'Facebook',
-        link:'facebook.com/dreplica'
+        link:'facebook.com/adejo.david'
     },
     {
         img: './assets/icon-twitter.svg',

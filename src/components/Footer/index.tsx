@@ -1,11 +1,14 @@
 import React from 'react';
 import List from './components/list';
+import Data from '../../util/getList.json'
+import {Container, Logo, Listing} from './style'
+import SocialLinks from './components/sociallinks';
 
 export default function Footer() {
   return (
       <Container>
           <Logo>
-              <image src='/' alt='logo' />
+              <img src='./assets/logo.svg' alt='logo' />
           </Logo>
           <Listing>
               {
@@ -16,7 +19,7 @@ export default function Footer() {
                   />)
               }
           </Listing>
-
+        <SocialLinks/>
     </Container>
   );
 }

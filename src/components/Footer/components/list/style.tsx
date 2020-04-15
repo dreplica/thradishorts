@@ -2,9 +2,11 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display:flex;
+    width:35%;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    background:red;
 `;
 
 export const Content = styled.ul`
@@ -12,7 +14,12 @@ export const Content = styled.ul`
 
     li{
         list-style:none;
-        font-weight:200;
+        color:black;
+        font-weight:300;
+
+        a{
+            text-decoration:none;
+        }
     }
 `
 

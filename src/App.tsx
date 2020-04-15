@@ -4,6 +4,7 @@ import Introduction from './components/intro';
 import Content from './components/body/index';
 import styled from 'styled-components';
 import Advert from './components/Ads';
+import Footer from './components/Footer';
 
 function App() {
   // console.log()
@@ -13,6 +14,7 @@ function App() {
       <Introduction />
       <Content />
       <Advert />
+      <Footer />
     </Container>
   );
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import {Container,Title,Content} from './style'
-
 interface Iprops{
     list: string[];
     title: string;
