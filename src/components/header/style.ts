@@ -51,14 +51,14 @@ export const  Nav = styled.nav`
     justify-content:flex-start;
 
     @media (max-width:960px) {
-        display:none;
         top:80px;
-        width:100%;
+        width:90%;
+        left:0;
         height:50vh;
         position:absolute;
         border-radius:10px;
         flex-direction:column;
-        justify-content:flex-start;
+        justify-content:center;
         align-items:center;
         background:${Style.colors.Dark_Violet};
 

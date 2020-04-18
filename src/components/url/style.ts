@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Container = styled.section`
     position:relative;
     bottom:-40px;
-    width:80%;
+    width:100%;
     display:flex;
     border-radius:10px;
     align-items:center;

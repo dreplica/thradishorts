@@ -23,4 +23,5 @@ export default App;
 
 const Container = styled.main`
   width:100%;
+  overflow-x:hidden;
 `
