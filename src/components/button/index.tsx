@@ -1,15 +1,16 @@
 import React from 'react';
-import {Container,Text} from './style'
+import {Text} from './style'
 
 interface Iprops {
     padding?:{left:number,top?:number};
     radius?:number;
-    text?:string;
+    text?: string;
+    width?: string;
     height?:number;
 }
 export default function Button(props:Iprops) {
-  return <Container>
-      <Text style={{
+  return  <Text style={{
+        width:props.width,
         height:props.height,
         paddingLeft:props.padding?.left,
         paddingRight:props.padding?.left,
@@ -17,5 +18,4 @@ export default function Button(props:Iprops) {
         paddingBottom:props.padding?.top,
         borderRadius:props.radius
   }}>{props.text}</Text>
-   </Container> 
 }

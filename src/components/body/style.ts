@@ -3,7 +3,7 @@ import { colors } from '../../util/colors';
 
 export const Container = styled.section`
     width:100%;
-    padding:10px;
+    padding:10px 10px 70px 10px;
     height:auto;
     display:flex;
     flex-direction:column;
@@ -26,6 +26,13 @@ export const CardContent = styled.div`
     display:flex;
     justify-content:space-between;
 
+    @media (max-width:960px) {
+        flex-direction:column;
+        align-items:center;
+        position:relative;
+        top:0px;
+    }
+
 
 `
 
@@ -35,5 +42,10 @@ export const Line = styled.div`
     bottom:-200px;
     z-index:1.5;
     height:10px;
-    background-color:${colors.Cyan}
+    background-color:${colors.Cyan};
+
+    @media (max-width:960px) {
+        width:30px;
+        height:600px;
+    }
 `

@@ -2,11 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display:flex;
-    width:35%;
+    width:32%;
     flex-direction:column;
     justify-content:center;
-    align-items:center;
-    background:red;
+    align-items:flex-start;
 `;
 
 export const Content = styled.ul`
@@ -19,6 +18,7 @@ export const Content = styled.ul`
 
         a{
             text-decoration:none;
+            color:white;
         }
     }
 `

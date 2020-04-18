@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '../../util/colors';
 
 export const Container = styled.div`
   width:80%;
@@ -13,11 +14,19 @@ export const Content = styled.div`
     flex-wrap:wrap;
     justify-content:center;
     align-items:center;
+
+    @media (max-width:960px) {
+        flex-direction:column;
+    }
 `
 
 export const Text=styled.div`
     align-self: flex-start;
     flex:1;
+     @media (max-width:960px) {
+        order:2;
+        text-align:center;
+    }
 `
 
 export const  Title=styled.p`
@@ -27,8 +36,9 @@ export const  Title=styled.p`
 `
 
 export const  SubText=styled.p`
-    font-weight:300;
+    font-weight:600;
     margin-bottom:50px;
+    color:${colors.Gray};
 `
 
 export const  Image=styled.div`
@@ -37,5 +47,10 @@ export const  Image=styled.div`
     right:-150px;
     img{
         width:100%;
+    }
+     @media (max-width:960px) {
+        flex:2;
+        order:1;
+        right:-100px;
     }
 `

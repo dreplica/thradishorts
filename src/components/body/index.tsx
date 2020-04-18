@@ -9,6 +9,7 @@ import {
 } from './style'
 import Card from './cards';
 export default function Content() {
+ 
   return (
     <Container>
         <Article />
@@ -17,11 +18,13 @@ export default function Content() {
         <CardContent>
           
           {
-            data.map((item,ind)=><Card
+            data.map((item, ind) => <Card
+              key={ind}
               margin={ind*80} 
               title={item.title}
               description={item.description}
               image={item.image}
+    
             />)
           }
         </CardContent>

@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display:flex;
-    flex:2;
+    flex:1;
     flex-wrap:wrap;
-    justify-content:center;
+    justify-content:space-around;
     align-items:flex-start;
 
     a{

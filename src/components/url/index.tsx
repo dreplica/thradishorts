@@ -5,11 +5,7 @@ import {Container} from './style'
 
 export default function Urlpath() {
   return (
-    <Container
-    style={{
-        backgroundImage:'/assets/br-shorten-desktop.svg'
-    }}
-    >
+    <Container>
         <form>
             <label> 
                 <input 
@@ -17,9 +13,9 @@ export default function Urlpath() {
                 placeholder='Shorten a link here...'
                 />
             </label>
-            <Button 
+        <Button 
             padding={{left:20,top:10}}
-            radius={10}
+            radius={5}
             text='Shorten it!'
             />
         </form>

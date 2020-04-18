@@ -14,7 +14,8 @@ interface Iprops {
     margin?:number;
 }
 
-export default function Card(props:Iprops) {
+export default function Card(props: Iprops) {
+    
   return (
     <Container style={{
         marginTop:props.margin
