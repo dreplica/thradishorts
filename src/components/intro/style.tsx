@@ -2,15 +2,24 @@ import styled from 'styled-components';
 import { colors } from '../../util/colors';
 
 export const Container = styled.div`
-  width:80%;
+  width:100%;
   height:auto;
-  margin:auto;
+  margin:auto;  
+
+   @media (max-width:960px) {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items:center;
+    }
 `;
 
 export const Content = styled.div`
     display:flex;
     margin-bottom:100px;
     width:100%;
+    /* overflow-y:unset; */
+    overflow-x:hidden;
     flex-wrap:wrap;
     justify-content:center;
     align-items:center;
