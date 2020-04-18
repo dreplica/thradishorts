@@ -52,7 +52,7 @@ export const  Nav = styled.nav`
 
     @media (max-width:960px) {
         top:80px;
-        width:90%;
+        width:100%;
         left:0;
         height:50vh;
         position:absolute;
