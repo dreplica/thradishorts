@@ -9,7 +9,8 @@ export const Container = styled.div`
     justify-content:center;
     align-items:center;
     height:200px;
-`;
+
+    `;
 
 export const Title = styled.p`
     font-size:2rem;
@@ -18,5 +19,9 @@ export const Title = styled.p`
     margin-bottom:10px;
     width:80%;
     text-align:center;
-
-`
+    
+    @media (max-width:960px) {
+        font-size:1.5rem;
+        
+    }
+    `

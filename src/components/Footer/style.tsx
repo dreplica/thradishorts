@@ -14,6 +14,12 @@ export const Container = styled.section`
   flex-wrap:wrap;
   justify-content:space-between;
   align-items:flex-start;
+  
+   @media (max-width:960px) {
+        flex-direction:column;
+        justify-content:space-between;
+        align-items:center;
+    }
 `;
 
 export const Logo = styled.div`
@@ -31,5 +37,11 @@ export const Listing = styled.div`
     color:white;
     align-items:flex-start;
     justify-content:center;
-    flex:3
+    flex:3;
+
+     @media (max-width:960px) {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
 `

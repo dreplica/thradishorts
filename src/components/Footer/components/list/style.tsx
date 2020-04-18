@@ -6,6 +6,13 @@ export const Container = styled.div`
     flex-direction:column;
     justify-content:center;
     align-items:flex-start;
+
+     @media (max-width:960px) {
+        width:70%;
+        margin:20px auto;
+        justify-content:center;
+        align-items:center;
+    }
 `;
 
 export const Content = styled.ul`
@@ -20,6 +27,9 @@ export const Content = styled.ul`
             text-decoration:none;
             color:white;
         }
+    }
+     @media (max-width:960px) {
+        text-align:center;
     }
 `
 

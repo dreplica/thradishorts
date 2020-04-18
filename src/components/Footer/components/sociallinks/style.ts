@@ -17,4 +17,8 @@ export const Container = styled.div`
             width:100%;
         }
     }
+
+     @media (max-width:960px) {
+        width:80%;
+    }
 `;

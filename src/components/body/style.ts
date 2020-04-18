@@ -10,7 +10,7 @@ export const Container = styled.section`
     justify-content:center;
     align-items:center;
     background:whitesmoke;
-`;
+    `;
 
 export const Cardbox = styled.div`
     width:80%;
@@ -19,6 +19,11 @@ export const Cardbox = styled.div`
     z-index:1;
     justify-content:space-between;
     align-items:center;
+
+    @media (max-width:960px) {
+        justify-content:flex-start;
+        /* background:red; */
+    }
 `
 
 export const CardContent = styled.div`
@@ -45,7 +50,11 @@ export const Line = styled.div`
     background-color:${colors.Cyan};
 
     @media (max-width:960px) {
-        width:30px;
-        height:600px;
+        position:absolute;
+        left:auto;
+        right:auto;
+        width:10px;
+        height:800px;
+        bottom:-1720px;
     }
 `
