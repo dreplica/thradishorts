@@ -20,7 +20,15 @@ export const Container = styled.section`
         color:inherit;
         text-decoration:none;
     }
-  
+
+    .Menu{
+        display:none;
+    }
+  @media (max-width:990px) {
+      .Menu{
+          display: block;
+      }
+  }
 `;
 
 export const Head = styled.header`
@@ -39,6 +47,7 @@ export const Logo = styled.div`
     color:${Style.colors.Dark_Violet};
 `
 
+
 export const List = styled.ul`
     display:flex;
     width:60%;
@@ -55,8 +64,8 @@ export const Nav = styled.nav`
     align-items:center;
     justify-content:flex-start;
 
-    @media (max-width:960px) {
-        display:none;
+    @media (max-width:989px) {
+        /* display:none !important; */
         top:80px;
         width:100%;
         height:50vh;
@@ -76,9 +85,13 @@ export const Nav = styled.nav`
                 text-align:center;
                 margin:10px auto;
                 font-weight:bold;
+                transition:transform 0.5s;
 
                 a{
                     color:white;
+                }
+                :hover{
+                    transform:scale(1.3)
                 }
             }
         }
@@ -110,7 +123,7 @@ export const Auth = styled.ul`
         }
     }
 
-    @media (max-width:960px) {
+    @media (max-width:990px) {
        width:80%;
        justify-content:flex-end;
        margin:auto;
