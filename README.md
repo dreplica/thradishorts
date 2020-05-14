@@ -1,3 +1,7 @@
+# thradishorts
+A url shortener that can save and shorten urls for people
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
