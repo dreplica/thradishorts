@@ -3,6 +3,7 @@ import { colors } from '../../util/colors';
 
 export const Container = styled.section`
     width:100%;
+    position:relative;
     padding:10px 10px 70px 10px;
     height:auto;
     display:flex;
@@ -53,6 +54,7 @@ export const Line = styled.div`
         position:absolute;
         left:auto;
         right:auto;
+        top:500px;
         width:10px;
         height:800px;
         bottom:-1720px;

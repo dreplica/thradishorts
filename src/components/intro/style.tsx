@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import { colors } from '../../util/colors';
 
 export const Container = styled.div`
+  position:relative;
   width:80%;
+  z-index:1;
   height:auto;
   margin:auto;  
 

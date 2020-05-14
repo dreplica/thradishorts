@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Urlpath from './url';
 import Button from '../button';
 import {
   Container,
@@ -8,8 +9,8 @@ import {
   Content,
   SubText,
   Image
- } from "./style";
-import Urlpath from '../url';
+} from "./style";
+ 
 export default function Introduction() {
   return <Container>
     <Content>

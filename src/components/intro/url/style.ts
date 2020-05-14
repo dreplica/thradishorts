@@ -1,4 +1,3 @@
-import { colors } from './../../util/colors';
 import styled from "styled-components";
 
 export const Container = styled.section`

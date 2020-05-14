@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import * as Style from '../../util/colors'
 
 export const Container = styled.section`
-    width:100%;
     position:sticky;
+    width:100%;
     top:0px;
     padding:30px;
     z-index:100;
     margin:30px auto 60px auto;
-    /* height:auto; */
+    height:auto;
     background:white;
 
     li{
@@ -23,8 +23,7 @@ export const Container = styled.section`
 `;
 
 export const Head = styled.header`
-    position:sticky;
-    top:0;
+    position:relative;
     display:flex;
     width:80%;
     margin:auto;
@@ -56,9 +55,9 @@ export const Nav = styled.nav`
     justify-content:flex-start;
 
     @media (max-width:960px) {
-        /* display:none; */
+        display:none;
         top:80px;
-        width:80%;
+        width:100%;
         height:50vh;
         position:absolute;
         border-radius:10px;
