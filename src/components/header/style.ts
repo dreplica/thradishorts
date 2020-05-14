@@ -23,6 +23,10 @@ export const Container = styled.section`
 
     .Menu{
         display:none;
+        transition:transform 0.5s;
+        :hover{
+            transform:scale(1.2)
+        }
     }
   @media (max-width:990px) {
       .Menu{

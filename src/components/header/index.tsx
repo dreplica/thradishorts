@@ -25,13 +25,13 @@ export default function Header() {
   const showNav = () => (window.innerWidth >= 990) ? setstate("flex") : setstate("none")
 
 
-  const toggleMenu = () => (state === "flex") ? setstate("none") : setstate("flex")
+  const toggleMenu = () => (state === "flex" && window.innerWidth < 990) ? setstate("none") : setstate("flex")
 
   return (<Container>
     <Head>
       <Logo>Thradishorts </Logo>
       <FaHamburger onClick={toggleMenu} className='Menu' size={30} />
-      <Nav style={{ display: state }}>
+      <Nav style={{ display: state }} onMouseLeave={toggleMenu}>
         <List>
           <li><a href='/'> Features</a></li>
           <li><a href='/'>Pricing</a></li>
