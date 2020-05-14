@@ -3,11 +3,12 @@ import * as Style from '../../util/colors'
 
 export const Container = styled.section`
     position:sticky;
+    position: -webkit-sticky;
+    top:0;
     width:100%;
-    top:0px;
     padding:30px;
     z-index:100;
-    margin:30px auto 60px auto;
+    margin:20px auto 60px auto;
     height:auto;
     background:white;
 

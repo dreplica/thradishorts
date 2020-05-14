@@ -51,10 +51,10 @@ export const  SubText=styled.p`
 `
 
 export const  Image=styled.div`
-    flex:1.5;
-    position:relative;
-    right:-150px;
+    flex:1;
     img{
+        position:relative;
+        right:-12%;
         width:100%;
     }
      @media (max-width:960px) {
