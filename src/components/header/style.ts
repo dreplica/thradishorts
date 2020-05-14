@@ -8,7 +8,7 @@ export const Container = styled.section`
     padding:30px;
     z-index:100;
     margin:30px auto 60px auto;
-    height:auto;
+    /* height:auto; */
     background:white;
 
     li{
@@ -23,15 +23,20 @@ export const Container = styled.section`
 `;
 
 export const Head = styled.header`
+    position:sticky;
+    top:0;
     display:flex;
     width:80%;
     margin:auto;
     justify-content:space-around;
     align-items:center;
 `
-    
+
 export const Logo = styled.div`
     flex:1;
+    font-size:2em;
+    font-weight:bolder;
+    color:${Style.colors.Dark_Violet};
 `
 
 export const List = styled.ul`
@@ -43,7 +48,7 @@ export const List = styled.ul`
         }
 `
 
-export const  Nav = styled.nav`
+export const Nav = styled.nav`
     flex:4;
     display:flex;
     flex-wrap:wrap;
@@ -51,14 +56,14 @@ export const  Nav = styled.nav`
     justify-content:flex-start;
 
     @media (max-width:960px) {
+        /* display:none; */
         top:80px;
-        width:100%;
-        left:0;
+        width:80%;
         height:50vh;
         position:absolute;
         border-radius:10px;
         flex-direction:column;
-        justify-content:center;
+        justify-content:flex-start;
         align-items:center;
         background:${Style.colors.Dark_Violet};
 
