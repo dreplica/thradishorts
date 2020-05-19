@@ -4,17 +4,15 @@ import { colors } from '../../util/colors';
 export const Container = styled.section`
     width:100%;
     position:relative;
-    padding:10px 10px 70px 10px;
+    padding:100px 10px 70px 10px;
     height:auto;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
     background:whitesmoke;
     `;
 
 export const Cardbox = styled.div`
     width:80%;
+    position:relative;
+    margin:auto;
     display:flex;
     flex-direction:column;
     z-index:1;
@@ -23,7 +21,6 @@ export const Cardbox = styled.div`
 
     @media (max-width:960px) {
         justify-content:flex-start;
-        /* background:red; */
     }
 `
 
@@ -54,9 +51,14 @@ export const Line = styled.div`
         position:absolute;
         left:auto;
         right:auto;
-        top:500px;
+        top:10px;
         width:10px;
         height:800px;
-        bottom:-1720px;
     }
+`
+export const Links = styled.div`
+    width:80%;
+    position:absolute;
+    height:auto;
+    left:10%;
 `
