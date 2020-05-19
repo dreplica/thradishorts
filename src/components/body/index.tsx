@@ -17,10 +17,9 @@ export default function Content() {
   return (
     <Container>
       <Links>
-         <ShortedLinks link="jambori.com" />
-         <ShortedLinks link="jambori.com" />
-         <ShortedLinks link="jambori.com" />
-         <ShortedLinks link="jambori.com" />
+        <ShortedLinks link="jambori.com" />
+        <ShortedLinks link="jambori.com" />
+        <ShortedLinks link="jambori.com" />
       </Links>
       <Article />
       <Cardbox>
