@@ -17,8 +17,8 @@ export default function ShortedLinks(props: Iprops) {
     }
 
     return (
-        <Container>
-            <Short type='text' ref={ref}>{props.link}</Short>
+        <Container> 
+            <Short type='text' ref={ref} value="lol"/>
             <Copy onClick={copied}>{state}</Copy>
         </Container>
     )

@@ -18,6 +18,11 @@ export const Short = styled.input`
     background:whitesmoke;
     font-weight:bold;
     height:30px;
+    padding-left:30px;
+
+    :focus{
+      border:0px;
+    }
 `;
 
 export const Copy = styled.button`
