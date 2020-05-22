@@ -12,9 +12,12 @@ export const Container = styled.div`
   border-bottom:1px solid ${colors.Very_Dark_Violet};
 `;
 
-export const Short = styled.p`
+export const Short = styled.input`
     width:60%;
-    height:20px;
+    border:0px;
+    background:whitesmoke;
+    font-weight:bold;
+    height:30px;
 `;
 
 export const Copy = styled.button`
