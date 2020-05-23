@@ -4,7 +4,6 @@ import { actionType } from "./actiontypes";
 export default function (state = stateContext, action: actionType) {
   switch (action.type) {
     case "New link":
-      console.log("payload",action.payload)
       state = setLocal(action.payload);
       return state;
     default:

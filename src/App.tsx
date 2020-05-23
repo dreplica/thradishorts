@@ -20,7 +20,6 @@ function App() {
   return (
     <ContextState.Provider value={{state,dispatch}}>
       <Container>
-        {console.log("this is state ",state)}
         <Header />
         <Introduction />
         <Content />

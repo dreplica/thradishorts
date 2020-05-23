@@ -16,12 +16,10 @@ export default function Urlpath() {
 
   const send_url = async (e: ChangeEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    console.log(state);
     const url = await Axios.post(`https://thradishorts.herokuapp.com/shorten`, {
       url: state,
     });
     if (!url.data.error) {
-      console.log("no errors");
       dispatch({ type: "New link", payload: url.data.url });
     }
   };
