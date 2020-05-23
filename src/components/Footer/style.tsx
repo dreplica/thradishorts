@@ -25,10 +25,10 @@ export const Container = styled.section`
 export const Logo = styled.div`
     flex:1;
     color:white;
-    img{
-        margin:auto;
-        color:white;
-    }
+    font-size:2em;
+    font-weight:bolder;
+    color:${colors.Grayish_Violet};
+    
 `
 
 export const Listing = styled.div`

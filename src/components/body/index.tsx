@@ -1,52 +1,37 @@
-import React from 'react';
+import React, { useContext } from "react";
 
-import Article from './Article/index';
-import {
-    Container,
-    Cardbox,
-    CardContent,
-    Line
-} from './style'
-import Card from './cards';
+import { ContextState } from "../../App";
+import Article from "./Article/index";
+import Card from "./cards";
+import data from "../../util/cards.json";
+import ShortedLinks from "./result";
+import { Container, Cardbox, CardContent, Links, Line } from "./style";
+
 export default function Content() {
- 
+  const { state } = useContext(ContextState);
+
   return (
     <Container>
-        <Article />
+      <Links>
+        {state.map((link, ind) => (
+          <ShortedLinks key={ind} link={link} />
+        ))}
+      </Links>
+      <Article />
       <Cardbox>
-          <Line />
+        <Line />
         <CardContent>
-          
-          {
-            data.map((item, ind) => <Card
+          {data.map((item, ind) => (
+            <Card
               key={ind}
-              margin={ind*80} 
+              margin={ind * 80}
               title={item.title}
               description={item.description}
               image={item.image}
-    
-            />)
-          }
+            />
+          ))}
         </CardContent>
-
-        </Cardbox>
+      </Cardbox>
     </Container>
   );
 }
-const data = [
-  {
-    title:'Brand Recoginition',
-    image:'./assets/icon-brand-recognition.svg',
-    description:'boost your brand recognition with each lick. generic links sond t mean a thinf branded links helo create confidence inn your content'
-  },
-  {
-    title: 'Brand Recoginition',
-    image: './assets/icon-detailed-records.svg',
-    description: 'boost your brand recognition with each lick. generic links sond t mean a thinf branded links helo create confidence inn your content'
-  },
-  {
-    title: 'Brand Recoginition',
-    image: './assets/icon-fully-customizable.svg',
-    description: 'boost your brand recognition with each lick. generic links sond t mean a thinf branded links helo create confidence inn your content'
-  }
-]

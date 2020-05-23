@@ -10,22 +10,22 @@ import {
   SubText,
   Image
 } from "./style";
- 
+
 export default function Introduction() {
   return <Container>
     <Content>
-        <Text>
-          <Title>More than just shorted links</Title>
-          <SubText>
-            Build your brand's recognition and get 
-            detailed insignts on how your links are performing
+      <Text>
+        <Title>More than just shorted links</Title>
+        <SubText>
+          your one stop spot for short links,
+          create an account to save all the links you've shorten.
           </SubText>
-          <Button padding={{left:20}} radius={20} text='Get started'/>
-        </Text>
-        <Image>
-          <img src={"/assets/illustration-working.svg"} alt='desktop' />
-        </Image>
+        <Button padding={{ left: 20 }} radius={20} text='Get started' />
+      </Text>
+      <Image>
+        <img src={"/assets/illustration-working.svg"} alt='desktop' />
+      </Image>
     </Content>
-      <Urlpath />
+    <Urlpath />
   </Container>
-  }
+}

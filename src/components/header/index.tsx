@@ -15,10 +15,9 @@ export default function Header() {
   const [state, setstate] = useState<"none" | "flex" | "flex">("flex")
 
   useEffect(() => {
-    const width = window;
-    width.addEventListener('resize', showNav, false);
+    window.addEventListener('resize', showNav, false);
     return () => {
-      width.removeEventListener('resize', showNav, false)
+      window.removeEventListener('resize', showNav, false)
     }
   }, [window.innerWidth])
 

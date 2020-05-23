@@ -69,7 +69,7 @@ export const Nav = styled.nav`
     justify-content:flex-start;
 
     @media (max-width:989px) {
-        /* display:none !important; */
+        display:none !important;
         top:80px;
         width:100%;
         height:50vh;

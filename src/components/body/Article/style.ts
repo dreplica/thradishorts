@@ -4,8 +4,8 @@ import { colors } from '../../../util/colors';
 export const Container = styled.div`
   width:40%;
   text-align:center;
-  margin-top:200px;
-  margin-bottom:100px;
+  margin:200px auto;
+  /* margin-bottom:100px; */
 
    @media (max-width:960px) {
         width:80%;
