@@ -15,6 +15,7 @@ export default function Urlpath() {
     return () => {
       window.removeEventListener("resize", resizeLenght, false);
     };
+    
   }, [window.innerWidth]);
 
   const resizeLenght = () =>
