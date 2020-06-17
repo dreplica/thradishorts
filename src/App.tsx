@@ -1,4 +1,4 @@
-import React, { createContext, useReducer, useEffect } from "react";
+import React, { createContext, useReducer } from "react";
 
 import Header from "./components/header";
 import Introduction from "./components/intro";
@@ -9,8 +9,6 @@ import Footer from "./components/Footer";
 import { contextState, initialContext } from "./util/contextState";
 import contextStore from "./store/contextState";
 
-//i stoped trying to create a context
-//state to manage all links
 
 export const ContextState = createContext<contextState>(initialContext);
 

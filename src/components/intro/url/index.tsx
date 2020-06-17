@@ -10,6 +10,7 @@ export default function Urlpath() {
   const { dispatch } = useContext(ContextState);
 
   useEffect(() => {
+    resizeLenght();
     window.addEventListener("resize", resizeLenght, false);
     return () => {
       window.removeEventListener("resize", resizeLenght, false);
