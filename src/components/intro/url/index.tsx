@@ -16,7 +16,6 @@ export default function Urlpath() {
     return () => {
       window.removeEventListener("resize", resizeLenght, false);
     };
-    
   }, [window.innerWidth]);
 
   const resizeLenght = () =>
@@ -31,7 +30,9 @@ export default function Urlpath() {
 
   const send_url = async (e: ChangeEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    getUrl(state.val)(dispatch)
+    if (!state.val) return;
+
+    getUrl(state.val)(dispatch);
   };
 
   return (
