@@ -4,6 +4,7 @@ import Axios from "axios";
 import { ContextState } from "../../../App";
 import Button from "../../button";
 import { Container } from "./style";
+import { getUrl } from "../../../store/actiontypes";
 
 export default function Urlpath() {
   const [state, setstate] = useState({ val: "", width: "80%" });
@@ -30,12 +31,7 @@ export default function Urlpath() {
 
   const send_url = async (e: ChangeEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    const url = await Axios.post(`https://thradishorts.herokuapp.com/shorten`, {
-      url: state.val,
-    });
-    if (!url.data.error) {
-      dispatch({ type: "New link", payload: url.data.url });
-    }
+    getUrl(state.val)(dispatch)
   };
 
   return (

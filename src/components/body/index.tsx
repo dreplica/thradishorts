@@ -13,7 +13,7 @@ export default function Content() {
   return (
     <Container>
       <Links>
-        {state.map((link, ind) => (
+        {state.linking.map((link, ind) => (
           <ShortedLinks key={ind} link={link} />
         ))}
       </Links>

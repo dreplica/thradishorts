@@ -6,14 +6,14 @@ import Content from "./components/body/index";
 import styled from "styled-components";
 import Advert from "./components/Ads";
 import Footer from "./components/Footer";
-import { contextState, initialContext } from "./util/contextState";
-import contextStore from "./store/contextState";
+import { contextState, initialContext, stateReducer } from "./store/contextState";
+import contextStore from "./store/reducer";
 
 
 export const ContextState = createContext<contextState>(initialContext);
 
 function App() {
-  const [state, dispatch] = useReducer(contextStore, []);
+  const [state, dispatch] = useReducer(contextStore,stateReducer);
 
   return (
     <ContextState.Provider value={{state,dispatch}}>
