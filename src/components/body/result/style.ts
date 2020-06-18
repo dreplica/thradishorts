@@ -15,6 +15,7 @@ export const Container = styled.div`
 export const Short = styled.input`
     width:60%;
     border:0px;
+    outline-width:0px;
     background:whitesmoke;
     font-weight:bold;
     height:30px;
@@ -28,6 +29,7 @@ export const Short = styled.input`
 export const Copy = styled.button`
   width:20%;
   border:0px;
+  outline-width:0px;
   border-radius:20px;
   color:white;
   background:${colors.Cyan};

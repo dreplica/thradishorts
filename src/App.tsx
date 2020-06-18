@@ -1,4 +1,4 @@
-import React, { createContext, useReducer, useEffect } from "react";
+import React, { createContext, useReducer } from "react";
 
 import Header from "./components/header";
 import Introduction from "./components/intro";
@@ -6,21 +6,18 @@ import Content from "./components/body/index";
 import styled from "styled-components";
 import Advert from "./components/Ads";
 import Footer from "./components/Footer";
-import { contextState, initialContext } from "./util/contextState";
-import contextStore from "./store/contextState";
+import { contextState, initialContext, stateReducer } from "./store/contextState";
+import contextStore from "./store/reducer";
 
-//i stoped trying to create a context
-//state to manage all links
 
 export const ContextState = createContext<contextState>(initialContext);
 
 function App() {
-  const [state, dispatch] = useReducer(contextStore, []);
+  const [state, dispatch] = useReducer(contextStore,stateReducer);
 
   return (
     <ContextState.Provider value={{state,dispatch}}>
       <Container>
-        {console.log("this is state ",state)}
         <Header />
         <Introduction />
         <Content />
