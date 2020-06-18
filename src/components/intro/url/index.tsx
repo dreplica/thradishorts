@@ -1,5 +1,4 @@
 import React, { useState, useContext, ChangeEvent, useEffect } from "react";
-import Axios from "axios";
 
 import { ContextState } from "../../../App";
 import Button from "../../button";
@@ -16,7 +15,7 @@ export default function Urlpath() {
     return () => {
       window.removeEventListener("resize", resizeLenght, false);
     };
-  }, [window.innerWidth]);
+  }, []);
 
   const resizeLenght = () =>
     window.innerWidth >= 950
