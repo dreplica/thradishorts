@@ -1,4 +1,4 @@
-import { stateReducer } from "./contextState";
+import { stateReducer } from "./contextstate";
 import { actionType } from "./actiontypes";
 
 export default function (state = stateReducer, action: actionType) {

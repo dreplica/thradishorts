@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import { ContextState } from "../../App";
-import Article from "./Article/index";
+import Article from "./article/index";
 import Card from "./cards";
 import data from "../../util/cards.json";
 import ShortedLinks from "./result";

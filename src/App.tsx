@@ -4,9 +4,9 @@ import Header from "./components/header";
 import Introduction from "./components/intro";
 import Content from "./components/body/index";
 import styled from "styled-components";
-import Advert from "./components/Ads";
-import Footer from "./components/Footer";
-import { contextState, initialContext, stateReducer } from "./store/contextState";
+import Advert from "./components/ads";
+import Footer from "./components/footer";
+import { contextState, initialContext, stateReducer } from "./store/contextstate";
 import contextStore from "./store/reducer";
 
 
