@@ -30,6 +30,7 @@ export default function Urlpath() {
   const send_url = async (e: ChangeEvent<HTMLButtonElement>) => {
     e.preventDefault();
     if (!state.val) return;
+    console.log(state.val)
     getUrl(state.val)(dispatch);
   };
 

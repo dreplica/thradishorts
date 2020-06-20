@@ -15,7 +15,6 @@ export default function ShortedLinks(props: Iprops) {
   const ref = useRef<HTMLInputElement>(null);
   const copied = () => {
     ref.current?.select();
-    // ref.current?.setSelectionRange(0, 9999);
     document.execCommand("copy");
     setstate("copied");
   };
@@ -25,6 +24,7 @@ export default function ShortedLinks(props: Iprops) {
       <Short
         type="text"
         ref={ref}
+        onChange={()=>{}}
         value={`https://thradishorts.herokuapp.com/${props.link}`}
       />
       <Copy onClick={copied}>{state}</Copy>
