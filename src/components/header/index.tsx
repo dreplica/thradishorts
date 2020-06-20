@@ -25,7 +25,7 @@ export default function Header() {
     <Container>
       <Head>
         <Logo>Thradishorts </Logo>
-        <FaHamburger onClick={toggleMenu} className="Menu" size={30} />
+        {/* <FaHamburger onClick={toggleMenu} className="Menu" size={30} />
         <Nav style={{ display: state }} onMouseLeave={toggleMenu}>
           <List>
             <li>
@@ -45,8 +45,8 @@ export default function Header() {
             <li className="sign">
               <a href="/">Sign Up</a>
             </li>
-          </Auth>
-        </Nav>
+          </Auth> */}
+        {/* </Nav> */}
       </Head>
     </Container>
   );
